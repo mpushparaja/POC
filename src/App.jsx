@@ -5,6 +5,7 @@ import About from "./components/About";
 import PageNoFound from "./components/PageNoFound";
 import User from "./components/User";
 import Hooks from "./components/Hooks";
+import States from "./components/States";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/hook" element={<Hooks />} />
+          <Route path="/states" element={<States />} />
           <Route path="/users" element={<User />}>
             <Route path=":id" element={<About />} />
           </Route>
