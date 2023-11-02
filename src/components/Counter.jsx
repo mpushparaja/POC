@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment, userInfo } from "./Redux/Reducers/CounterSlice";
+import Home from "./Home";
 
 export default function Counter() {
   //   const [userInfo, SetUserInfo] = useState('');
@@ -22,6 +23,7 @@ export default function Counter() {
       <div>{count}</div>
       <button onClick={() => dispatch(increment())}>++</button>
       <button onClick={() => dispatch(decrement())}>--</button>
+      <Home />
     </div>
   );
 }
